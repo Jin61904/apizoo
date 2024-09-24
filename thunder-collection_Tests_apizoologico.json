@@ -1,0 +1,89 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Tests_apizoologico",
+    "collectionId": "e136db85-18a5-4446-ae9e-f6204085f9f9",
+    "dateExported": "2024-09-24T17:57:21.267Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "6355f324-c839-493e-b498-ff44e9ed6f81",
+            "name": "Animals_Collection",
+            "containerId": "",
+            "created": "2024-09-24T17:57:06.947Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bc72533e-ba59-437c-b453-c778bc179208",
+            "colId": "e136db85-18a5-4446-ae9e-f6204085f9f9",
+            "containerId": "6355f324-c839-493e-b498-ff44e9ed6f81",
+            "name": "SearchAll_Animals",
+            "url": "http://localhost:3000/api/animals",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-09-24T17:48:02.165Z",
+            "modified": "2024-09-24T17:48:07.809Z",
+            "headers": []
+        },
+        {
+            "_id": "a9143c22-4f17-4e19-aca2-1583c6b7c2eb",
+            "colId": "e136db85-18a5-4446-ae9e-f6204085f9f9",
+            "containerId": "6355f324-c839-493e-b498-ff44e9ed6f81",
+            "name": "SearchOne_Animals",
+            "url": "http://localhost:3000/api/animals/654067a6b40184e2d38cc23d",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-09-24T17:48:21.425Z",
+            "modified": "2024-09-24T17:49:01.013Z",
+            "headers": []
+        },
+        {
+            "_id": "fb96f8a7-d667-49e1-ae97-addf965da415",
+            "colId": "e136db85-18a5-4446-ae9e-f6204085f9f9",
+            "containerId": "6355f324-c839-493e-b498-ff44e9ed6f81",
+            "name": "UpdateOne_Animals",
+            "url": "http://localhost:3000/api/animals/654067a6b40184e2d38cc23d",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-09-24T17:49:19.347Z",
+            "modified": "2024-09-24T17:54:21.256Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Fifis\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ed514d2b-2a83-4e4c-89bc-1f65ba78c4af",
+            "colId": "e136db85-18a5-4446-ae9e-f6204085f9f9",
+            "containerId": "6355f324-c839-493e-b498-ff44e9ed6f81",
+            "name": "DeleteOne_Animals",
+            "url": "http://localhost:3000/api/animals/654155d752993cc0409c3afc",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-09-24T17:54:40.520Z",
+            "modified": "2024-09-24T17:55:20.667Z",
+            "headers": []
+        },
+        {
+            "_id": "bbf462fc-535c-4c22-bc69-104dc44dc7f3",
+            "colId": "e136db85-18a5-4446-ae9e-f6204085f9f9",
+            "containerId": "6355f324-c839-493e-b498-ff44e9ed6f81",
+            "name": "New_Animals",
+            "url": "http://localhost:3000/api/animals/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-09-24T17:55:56.004Z",
+            "modified": "2024-09-24T17:56:43.950Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Firulais\",\n  \"edad\":2,\n  \"tipo\":\"Canino\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "hgQMiG1cUd26tkAGQ23NPNIptfJcJ0CPjGZiL5VuTT_Pkn5GA2j4cQegx_fXYrO9CsP3OJbp9gZbXDUXykSFtA"
+}
