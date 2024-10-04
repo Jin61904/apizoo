@@ -2,6 +2,7 @@ const parser = require("body-parser");
 const express = require('express');
 const app = express();
 const port = 3000;
+const authRoutes = require("./routes/authRoutes");
 const animalRoutes = require("./routes/animalRoutes");
 const areaRoutes = require("./routes/areaRoutes");
 const mongoose = require("mongoose");
@@ -11,6 +12,7 @@ app.use(parser.urlencoded({ extended: false })); //permite leer los datos que vi
 app.use(parser.json()); // transforma los datos a formato JSON
 //Gestión de las rutas usando el middleware
 
+app.use("/api", authRoutes);
 app.use("/api", animalRoutes);
 app.use("/api", areaRoutes);
 
