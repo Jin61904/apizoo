@@ -4,6 +4,15 @@ const animalSchema = require("../models/animalModel");
 const areaSchema = require("../models/areaModel");
 
 //areas
+
+router.get("/areas", (req, res) => {
+    areaSchema
+        .find()
+        .then((data) => res.json(data))
+        .catch((error) => res.json({ message: error }));
+});
+
+
 router.post("/areas", (req, res) =>{
     const area = areaSchema(req.body);
     area
